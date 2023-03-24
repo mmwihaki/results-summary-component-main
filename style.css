@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
-
-body{
-    font-family: 'Hanken Grotesk', sans-serif;
-    height: 100vh;
-    font-size: 18;
+@font-face {
+    font-family:  'Hanken Grotesk', sans-serif;
 }
 
 .blue-box{
@@ -40,10 +36,95 @@ body{
 }
 
 .reaction, .memory, .verbal, .visual{
-    background-color: hsl(0, 100%, 67%);
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+}
+
+.reaction{
+    background-color: hsl(0, 100%, 67%);
+}
+
+.memory{
+    src: url();
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    font-size: 18;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.blue-box{
+    background-color: hsl(234, 85%, 45%);
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 25%;
+    flex: 1;
+}
+
+.white-box{
+    flex: 1;
+    background-color: white;
+    color: black;
+    text-align: left;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 25%;
+    box-shadow: 2px;
+    border: 2px, solid, black;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* center align horizontally */
+    align-items: center; /* center align vertically */
+    height: 100vh; /* set container height to 100% of viewport height */ 
+    width: 50%;
+}
+
+.summary{
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+
+.reaction, .memory, .verbal, .visual{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.reaction{
+    background-color: hsl(0, 100%, 67%, 0.1);;
+    color: hsla(0, 100%, 67%);
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsla(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
 }
 
 
