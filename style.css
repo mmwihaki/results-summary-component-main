@@ -178,4 +178,50 @@ img{
     top: 400px;
 }
 
+
+@media screen and (max-width: 375px) {
+
+    .container{
+        display: block;
+        position: relative;
+    }
+    .blue-box{
+        width: 100%;
+        margin: 0;
+        left: 0;
+        top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .white-box{
+        display: hidden;
+        left: 0;
+        top: 500px;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .summary{
+        left: 30px;
+        padding-bottom: 80px;
+    }
+
+    .attribution{
+        top: 970px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .reaction, .memory, .verbal, .visual{
+        margin-top: 15px;
+        margin-right: 35px;
+    }
+
+    .blue-button{
+        margin-top: 40px;
+    }
+  }
+
   
