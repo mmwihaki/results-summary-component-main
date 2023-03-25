@@ -12,7 +12,7 @@ body{
     position: absolute;
     width: 371px;
     height: 524px;
-    left: 400px;
+    left: 500px;
     top: 250px;
     z-index: 999;
     background: #7857FF;
@@ -30,7 +30,7 @@ body{
     position: absolute;
     width: 454px;
     height: 524px;
-    left: 680px;
+    left: 780px;
     top: 250px;
     background: #FFFFFF;
     -webkit-box-shadow: 5px 9px 15px 5px rgba(17,37,212,0.15); 
@@ -43,9 +43,9 @@ body{
     width: 200px;
     height: 200px;
     background: #2421CA ;
-    background: -moz-linear-gradient(top, #2421CA  0%, #4E21CA 100%);
-    background: -webkit-linear-gradient(top, #2421CA  0%, #4E21CA 100%);
-    background: linear-gradient(to bottom, #2421CA  0%, #4E21CA 100%);
+    background: -moz-linear-gradient(bottom, #2421CA  0%, #4E21CA 100%);
+    background: -webkit-linear-gradient(bottom, #2421CA  0%, #4E21CA 100%);
+    background: linear-gradient(to top, #2421CA  0%, #4E21CA 100%);
     border-radius: 200px;
     position: relative;
     align-self: center;
@@ -56,17 +56,17 @@ body{
     align-items: center;
 }
 
-circle::after{
+/* circle::after{
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     pointer-events: none;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+    background-image: linear-gradient(to bottom, #2421CA, rgba(255,255,255, 1) 10%);
     width: 100%;
     height: 4em;
     z-index: 1;
-}
+} */
 
 .container {
     display: flex;
@@ -87,9 +87,11 @@ circle::after{
     float: right;
 }
 
-h3{
-    font-size: 22px;
+h3, .top-text, .score{
+    font-size: 18px;
     font-weight: bolder;
+    color: hsl(0, 0%, 100%, 0.5);
+    padding: 10px;
 }
 
 .grade{
@@ -102,9 +104,10 @@ h3{
 }
 
 .overall{
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
+    color: hsl(0, 0%, 100%, 0.5);
 }
 
 
@@ -115,7 +118,6 @@ h3{
     top: 50px;
     position: relative;
     padding-bottom: 70px;
-
     font-size: 24px;
     font-weight: 700;
 
@@ -167,7 +169,13 @@ h3{
 }
 
 img{
-    padding: 4px;
+    padding: 5px;
+    height: 25px;
+}
+
+.attribution{
+    position: relative;
+    top: 400px;
 }
 
   
