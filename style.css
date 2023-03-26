@@ -155,12 +155,22 @@ h3, .top-text, .score{
     background: linear-gradient(to top, #2421CA  0%, #4E21CA 100%);
 }
 
-#left{
+.left{
     float: left;
 }
 
-#right{
+.right{
     float: right;
+}
+
+.right-text{
+    color: black;
+    font-weight: 700;
+}
+
+.over{
+    color: black;
+    opacity: calc(35%);
 }
 
 img{
